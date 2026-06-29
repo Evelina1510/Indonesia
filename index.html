@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Indonesia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -11,8 +15,8 @@
 <header>
     <div class="container">
 
-        <a href="" class="logo">
-            <img src="./imgs/logo.png alt="Logo" />
+        <a href="#" class="logo">
+           <img src="./imgs/logo.png" alt="">
         </a>
 
         <nav class="header_nav">
@@ -81,7 +85,7 @@
  <section class="about">
     <ul>
         <li>
-            <img src="./img/about1.png" alt="">
+            <img src="./imgs/about1.png" alt="">
         </li>
         <li>
             <h2>The walkways of <br>
@@ -96,7 +100,7 @@
 
     <ul>
         <li>
-            <img src="./img/about2.png" alt="">
+            <img src="./imgs/about2.png" alt="">
         </li>
         <li>
             <h2>Perfect beaches exude <br>
@@ -110,49 +114,100 @@
     </ul>
 </section>
     <!-- Explore and Numbers Elya -->
-<section class="explore">
-  <div class="container">
-    <h2 class="explore__title">Explore Our Secrets</h2>
+<section class="explore__numbers">
+    <img class="explore__bg" src="./imgs/explore.jpg" alt="">
+  
+  <section class="explore">
+    <div class="container">
 
-    <div class="carousel">
-      <button class="carousel__btn" id="prev" aria-label="Previous"></button>
+      <h2 class="explore__title">Explore Our Secrets</h2>
 
-      <div class="carousel__outer" id="carouselOuter">
-        <div class="carousel__track" id="carouselTrack">
-          <div class="carousel__slide">
-            <img src="/imgs/carousel1.jpg" alt="Temple at sunset" />
-          </div>
+      <div class="carousel">
+        <button class="carousel__btn" id="prev" aria-label="Previous">
+          &#10094;
+        </button>
 
-          <div class="carousel__slide">
-            <img src="/imgs/carousel2.jpg" alt="Forest path" />
-          </div>
+        <div class="carousel__outer" id="carouselOuter">
+          <div class="carousel__track" id="carouselTrack">
 
-          <div class="carousel__slide">
-            <img src="/imgs/carousel3.jpg" alt="Tropical leaves" />
-          </div>
+            <div class="carousel__slide">
+              <img src="./imgs/carousel1.jpg" alt="">
+            </div>
 
-          <div class="carousel__slide">
-            <img src="/imgs/carousel1.jpg" alt="Mountain view" />
-          </div>
+            <div class="carousel__slide">
+              <img src="./imgs/carousel2.jpg" alt="">
+            </div>
 
-          <div class="carousel__slide">
-            <img src="/imgs/carousel2.jpg" alt="Beach" />
-          </div>
+            <div class="carousel__slide">
+              <img src="./imgs/carousel3.jpg" alt="">
+            </div>
 
-          <div class="carousel__slide">
-            <img src="/imgs/carousel3.jpg" alt="Rice field" />
+            <div class="carousel__slide">
+              <img src="./imgs/carousel1.jpg" alt="">
+            </div>
+
+            <div class="carousel__slide">
+              <img src="./imgs/carousel2.jpg" alt="">
+            </div>
+
+            <div class="carousel__slide">
+              <img src="./imgs/carousel3.jpg" alt="">
+            </div>
           </div>
         </div>
+        <button class="carousel__btn" id="next" aria-label="Next">
+          &#10095;
+        </button>
       </div>
-
-      <button class="carousel__btn" id="next" aria-label="Next">></button>
+      <div class="carousel__dots" id="carouselDots"></div>
     </div>
+  </section>
 
-    <div class="carousel__dots" id="carouselDots"></div>
-  </div>
+
+  <section class="numbers">
+    <div class="container">
+      <h2 class="numbers__title">By The Numbers</h2>
+      <p class="numbers__subtitle">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Fusce commodo magna et libero. Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit.
+      </p>
+      <ul class="numbers__list">
+        <li class="numbers__item">
+          <p class="numbers__value">100+</p>
+          <p class="numbers__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Fusce commodo magna et libero.
+          </p>
+        </li>
+        <li class="numbers__item">
+          <p class="numbers__value">43,000+</p>
+          <p class="numbers__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Fusce commodo.
+          </p>
+        </li>
+        <li class="numbers__item">
+          <p class="numbers__value">30+</p>
+          <p class="numbers__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Fusce commodo magna et libero.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
 </section>
-
-    <!-- Video Elya -->
+<!-- Info  Elya-->
+ <section class="info">
+  <div class="container">
+    <div class="info__content">
+    <h2 class="info__title">Our hills and valleys are like nothing you’ve seen.</h2>
+    <p class="info__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet magna commodo, tempus dolor sit amet, laoreet elit. Donec mauris tortor.</p>
+    <button class="info__button">Learn More</button>
+  </div>
+  </div>
+ </section>
 
     <!-- Photo Galery Ustyna -->
 <section class="gallery">
@@ -230,6 +285,6 @@
         <p class="footer__copyright">Copyright © 2019</p>
       </div>
     </footer>
-  
+  <script src="./js/modal.js"></script>
 </body>
 </html>
