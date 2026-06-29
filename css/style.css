@@ -5,9 +5,9 @@
 }
 
 .container {
-  max-width: 1640px;
+  max-width: 1200px;
   width: 100%;
-  padding: 0 20px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 /* EXPLORE+NUMBERS ELYA */
@@ -23,7 +23,7 @@
   padding-top: 127px;
   padding-bottom: 45px;
 }
-.explore__numbers {
+.explore-numbers {
   position: relative;
   overflow: hidden;
 }
@@ -38,7 +38,16 @@
 }
 
 .numbers {
-  background: rgba(2, 12, 33, 0.88);
+  background:
+    linear-gradient(
+      rgba(2, 12, 33, 0.8),
+      rgba(2, 12, 33, 0.8)
+    ),
+    url("../imgs/explore.jpg");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
 }
 
 .explore .container {
@@ -52,6 +61,7 @@
   display: flex;
   align-items: center;
   gap: 12px;
+  
 }
 
 .carousel__btn {
@@ -106,6 +116,7 @@
   justify-content: center;
   gap: 8px;
   margin-top: 18px;
+  padding-bottom: 886px;
 }
 
 .carousel__dot {
@@ -187,6 +198,7 @@
 .numbers__item {
   max-width: 300px;
   text-align: center;
+  padding-bottom: 224px;
 }
 
 /* Info Elya */
