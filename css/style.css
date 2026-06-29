@@ -1,16 +1,18 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .container {
-  width: 0 1640px;
+  max-width: 1640px;
+  width: 100%;
   padding: 0 20px;
   margin: 0 auto;
 }
-
+/* EXPLORE+NUMBERS ELYA */
 .explore__title {
+  font-family: "DM Sans", sans-serif;
   color: rgb(1, 10, 32);
   text-align: center;
   font-family: "DM Sans";
@@ -18,25 +20,25 @@
   font-style: normal;
   font-weight: 700;
   line-height: 150%;
-  padding-top:127px;
+  padding-top: 127px;
   padding-bottom: 45px;
 }
-.explore {
+.explore__numbers {
   position: relative;
-  background-image: url("../imgs/explore.jpg");
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: flex-start;
-  width: 1920px;
-  height: 2207px;
+  overflow: hidden;
 }
 
-.explore::before {
-  content: "";
+.explore__bg {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.15);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.numbers {
+  background: rgba(2, 12, 33, 0.88);
 }
 
 .explore .container {
@@ -45,7 +47,7 @@
   width: 100%;
   max-width: 1640px;
 }
-
+/* carousel explore */
 .carousel {
   display: flex;
   align-items: center;
@@ -72,7 +74,6 @@
 .carousel__btn:hover {
   opacity: 0.6;
 }
-
 
 .carousel__outer {
   overflow: hidden;
@@ -124,7 +125,141 @@
   background: #e63946;
   transform: scale(1.2);
 }
+/* NUMBERS ELYA */
+.numbers__title {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  text-align: center;
+  color: white;
+  padding-top: 201px;
+  padding-bottom: 37px;
+}
 
+.numbers__subtitle {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #e0e0e0;
+  width: 484px;
+  margin: 0 auto;
+  padding-bottom: 39px;
+}
+
+.numbers__value {
+  color: #dd2242;
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 42.137px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 49.16px;
+  letter-spacing: 0.386px;
+  padding-bottom: 19px;
+}
+
+.numbers__text {
+  color: #e0e0e0;
+  text-align: center;
+  font-feature-settings:
+    "liga" off,
+    "clig" off;
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+}
+
+.numbers__list {
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+  margin-top: 70px;
+  padding: 0;
+  list-style: none;
+}
+
+.numbers__item {
+  max-width: 300px;
+  text-align: center;
+}
+
+/* Info Elya */
+.info {
+  padding: 501px 256px;
+  background-color: white;
+  background-image:
+    url("../imgs/waves_left.png"), url("../imgs/waves_right.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position:
+    left top,
+    right bottom;
+  background-size: 1000px, 1100px;
+}
+
+.info__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.info__title {
+  color: #000;
+  text-align: center;
+  font-feature-settings:
+    "liga" off,
+    "clig" off;
+  font-family: "DM Sans";
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px;
+  width: 614px;
+padding-bottom: 32px;
+
+}
+
+.info__text {
+  color: #6f7787;
+  text-align: center;
+  font-feature-settings:
+    "liga" off,
+    "clig" off;
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+  width: 470px;
+  padding-bottom: 36px;
+}
+
+.info__button {
+  display: flex;
+  padding: 19px 56px;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  border-radius: 122px;
+  background: #dd2242;
+  color: #fff;
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  margin: 0 auto;
+}
+
+/* GALLERY USTYNA */
 img {
   display: block;
   max-width: 100%;
@@ -357,7 +492,8 @@ img {
     padding: 24px 16px 32px;
   }
 
-  .hero, .features__panel {
+  .hero,
+  .features__panel {
     padding: 28px;
   }
 
