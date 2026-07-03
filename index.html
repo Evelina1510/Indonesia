@@ -13,111 +13,125 @@
 </head>
 <body>
     <!-- header Vova -->
-<header>
+<header class="header">
     <div class="container">
 
-      <section class="logo_nav">
-        
-        <a href="#" class="logo">
-           <img src="./imgs/logo.png" alt="">
-        </a>
+        <div class="header__top">
 
-        <nav class="header_nav">
-            <ul class="header_list">
-                <li class="header_list_item"><a class="header_list_a" href="#">DESTINATIONS</a></li>
-                <li class="header_list_item"><a class="header_list_a" href="#">EXPERIENCES</a></li>
-                <li class="header_list_item"><a class="header_list_a" href="#">ABOUT</a></li>
-                <li class="header_list_item"><a class="header_list_a" href="#">GALLERY</a></li>
+            <a href="#" class="header__logo">
+                <img src="./imgs/logo.png" alt="">
+            </a>
+
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li class="header__menu-item">
+                        <a href="#" class="header__menu-link">DESTINATIONS</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#" class="header__menu-link">EXPERIENCES</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#" class="header__menu-link">ABOUT</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#" class="header__menu-link">GALLERY</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <ul class="header__icons">
+                <li class="header__icons-item">
+                    <svg class="header__icon">
+                        <use href="./imgs/symbol-defs.svg#icon-search"></use>
+                    </svg>
+                </li>
+
+                <li class="header__icons-item">
+                    <svg class="header__icon">
+                        <use href="./imgs/symbol-defs.svg#icon-menu"></use>
+                    </svg>
+                </li>
             </ul>
-        </nav>
 
-        
-        <ul class="header_svg_list">
-            <li class="header_svg_list_item"> 
-                <svg class="header_svg">
-                    <use href="./imgs/symbol-defs.svg#icon-search"></use>
-                </svg>
+        </div>
+
+        <div class="header__content">
+            <h1 class="header__title">
+                EXPLORE <br>
+                INDONESIA
+            </h1>
+
+            <button class="header__button">
+                Start travelling
+            </button>
+        </div>
+
+        <ul class="header__features">
+            <li class="header__feature">
+                <p class="header__feature-number">01</p>
+                <h2 class="header__feature-title">Title here</h2>
+                <p class="header__feature-text">Lorem ipsum...</p>
             </li>
 
-            <li class="header_svg_list_item">
-                <svg class="header_svg">
-                    <use href="./img/symbol-defs.svg#icon-menu"></use>
-                </svg>
+            <li class="header__feature">
+                <p class="header__feature-number">02</p>
+                <h2 class="header__feature-title">Title here</h2>
+                <p class="header__feature-text">Lorem ipsum...</p>
+            </li>
+
+            <li class="header__feature">
+                <p class="header__feature-number">03</p>
+                <h2 class="header__feature-title">Title here</h2>
+                <p class="header__feature-text">Lorem ipsum...</p>
             </li>
         </ul>
-        
-    
 
-    </section>
+        <div class="header__video">
+            <img class="header__video-image" src="./img/video_hero.png" alt="">
+            <img class="header__video-play" src="./img/play_arrow.png" alt="">
+        </div>
 
-    <div class="travel_div">
-    <h1 class="travel_h1">EXPLORE <br>
-      INDONESIA</h1>
-    <button class="travel_button">Start travelling</button>
-    </div>
-
-    <ul>
-        <li>
-            <p>01</p>
-            <h2>Title here</h2>
-            <p>Lorem ipsum dolor sit amet et amet ist ame</p>
-        </li>
-
-        <li>
-            <p>02</p>
-            <h2>Title here</h2>
-            <p>Lorem ipsum dolor sit amet et amet ist ame</p>
-        </li>
-
-        <li>
-            <p>03</p>
-            <h2>Title here</h2>
-            <p>Lorem ipsum dolor sit amet et amet ist ame</p>
-        </li>
-    </ul>
-
-    <ul>
-        <li>
-            <img src="./img/video_hero.png" alt="">
-        </li>
-        <li>
-            <img src="./img/play_arrow.png" alt="">
-        </li>
-    </ul>
     </div>
 </header>
 
- <!-- hero Vova -->
- <section class="hero">
-    <ul>
-        <li>
-            <img src="./imgs/about1.png" alt="">
-        </li>
-        <li>
-            <h2>The walkways of <br>
-                Indonesia spellbind</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adip <br> 
-                iscing elit. Fusce commodo magna et libero <br> 
-                mollis rhoncus. </p>
+<section class="about">
 
-                <button>Learn more</button>
-        </li>
-    </ul>
+    <div class="about__item">
+        <img class="about__image" src="./imgs/about1.png" alt="">
 
-    <ul>
-        <li>
-            <img src="./imgs/about2.png" alt="">
-        </li>
-        <li>
-            <h2>Perfect beaches exude <br>
-                relaxation and fun</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adip <br> 
-                iscing elit. Fusce commodo magna et libero <br> 
-                mollis rhoncus. </p>
+        <div class="about__content">
+            <h2 class="about__title">
+                The walkways of Indonesia spellbind
+            </h2>
 
-                <button>Learn more</button>
-        </li>
-    </ul>
+            <p class="about__text">
+                Lorem ipsum...
+            </p>
+
+            <button class="about__button">
+                Learn more
+            </button>
+        </div>
+    </div>
+
+    <div class="about__item">
+        <img class="about__image" src="./imgs/about2.png" alt="">
+
+        <div class="about__content">
+            <h2 class="about__title">
+                Perfect beaches exude relaxation and fun
+            </h2>
+
+            <p class="about__text">
+                Lorem ipsum...
+            </p>
+
+            <button class="about__button">
+                Learn more
+            </button>
+        </div>
+    </div>
+
 </section>
     <!-- Explore and Numbers Elya -->
 <section class="explore-numbers">

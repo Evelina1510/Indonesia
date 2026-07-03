@@ -17,12 +17,12 @@ header {
   background-image: url(../imgs/header_bacground.png);
 }
 
-.logo_nav {
+.header__top {
   display: flex;
   justify-content: space-between;
 }
 
-.logo {
+.header__logo{
   position: absolute;
   left: 28px;
   padding-top: 28px;
@@ -33,30 +33,30 @@ header {
   margin-left: 64.03px;
 }
 
-.header_list {
+.header__menu {
   display: flex;
   gap: 61px;
   
 }
 
 
-.header_list_a {
+.header__menu-link {
   text-decoration: none;
   color: white;
   font-family: "DM Sans", sans-serif;
 }
 
-.header_svg {
+.header__icon {
   width: 24px;
   fill: white;
 }
 
-.travel_h1 {
+.header__title {
   font-size: 115px;
   color: white;
 }
 
-.travel_button {
+.header__button {
   font-family: "DM Sans", sans-serif;
   border-radius: 30px;
   width: 191px;
