@@ -14,15 +14,16 @@
 /* vova */
 
 header {
+
   background-image: url(../imgs/header_bacground.png);
 }
 
-.header__top {
+.logo_nav {
   display: flex;
   justify-content: space-between;
 }
 
-.header__logo{
+.logo {
   position: absolute;
   left: 28px;
   padding-top: 28px;
@@ -33,30 +34,36 @@ header {
   margin-left: 64.03px;
 }
 
-.header__menu {
+.header_list {
   display: flex;
   gap: 61px;
   
 }
 
 
-.header__menu-link {
+.header_list_a {
   text-decoration: none;
   color: white;
   font-family: "DM Sans", sans-serif;
 }
 
-.header__icon {
+.header_svg {
   width: 24px;
   fill: white;
 }
 
-.header__title {
+.header_svg_list {
+  display: flex;
+}
+
+
+
+.travel_h1 {
   font-size: 115px;
   color: white;
 }
 
-.header__button {
+.travel_button {
   font-family: "DM Sans", sans-serif;
   border-radius: 30px;
   width: 191px;
