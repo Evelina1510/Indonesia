@@ -294,8 +294,9 @@
 </ul>
 </section>
 
-    <!-- Photo Galery Ustyna -->
+ <!-- Photo Galery Ustyna -->
 <section class="gallery">
+      <div class="container">
       <div class="gallery__panel">
         <div class="gallery__content">
           <h1>Photo Gallery</h1>
@@ -322,45 +323,64 @@
           </div>
         </div>
       </div>
+      </div>
     </section>
     <!-- Future Ustyna -->
      <section class="features">
+      <div class="container">
       <div class="features__panel">
         <div class="features__main">
-          <div class="section-header">
-            <h2>Getting there</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in lectus laoreet, eget tincidunt lacus varius.</p>
-          </div>
-          <div class="steps">
-            <article class="step">
-              <div class="step__number">1</div>
-              <div>
-                <h3>Bookings your flights</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in lectus laoreet, eget tincidunt lacus varius.</p>
+          <div class="features__copy">
+            <div class="section-header">
+              <h2>Getting there</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in lectus laoreet, eget tincidunt lacus varius.</p>
+            </div>
+            <div class="steps">
+              <article class="step">
+                <div class="step__number">1</div>
+                <div class="step__content">
+                  <h3>Bookings your flights</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in lectus tempus, eget tincidunt lacus varius.</p>
+                </div>
+              </article>
+              <article class="step">
+                <div class="step__number">2</div>
+                <div class="step__content">
+                  <h3>Choosing your hotel</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in lectus tempus, eget tincidunt lacus varius.</p>
+                </div>
+
+                              <div class="travel-card travel-card--inline">
+                <img src="./imgs/Video.png" alt="Travelling there">
+                <div class="travel-card__body">
+                  <p class="travel-card__label">Travelling there</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in lectus tempus, eget tincidunt.</p>
+                </div>
               </div>
-            </article>
-            <article class="step">
-              <div class="step__number">2</div>
-              <div>
-                <h3>Choosing your hotel</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in lectus laoreet, eget tincidunt lacus varius.</p>
+              </article>
+              <article class="step">
+                <div class="step__number">3</div>
+                <div class="step__content">
+                  <h3>Planning your experiences</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in lectus tempus, eget tincidunt lacus varius.</p>
+                </div>
+              </article>
               </div>
-            </article>
-            <article class="step">
-              <div class="step__number">3</div>
-              <div>
-                <h3>Planning your experiences</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in lectus laoreet, eget tincidunt lacus varius.</p>
-                <a class="button button--secondary" href="#">Learn More</a>
-              </div>
-            </article>
+            </div>
+            <div class="features__actions">
+              <a class="button button--secondary" href="#">Learn More</a>
+            </div>
           </div>
         </div>
+              </div>
     </section>
     <!-- Footer Ustyna -->
      <footer class="site-footer">
+      <div class="container">
       <div class="footer__inner">
-        <p class="footer__brand">Explore Indonesia</p>
+        <p class="footer__brand">
+          <span class="footer__brand-highlight">Explore</span> Indonesia
+        </p>
         <nav class="footer__nav">
           <a href="#">About</a>
           <a href="#">Pricing</a>
@@ -368,6 +388,7 @@
           <a href="#">Blog</a>
         </nav>
         <p class="footer__copyright">Copyright © 2019</p>
+      </div>
       </div>
     </footer>
   <script src="./js/modal.js"></script>
