@@ -96,10 +96,7 @@ header {
 
 .numbers {
   background:
-    linear-gradient(
-      rgba(2, 12, 33, 0.8),
-      rgba(2, 12, 33, 0.8)
-    ),
+    linear-gradient(rgba(2, 12, 33, 0.8), rgba(2, 12, 33, 0.8)),
     url("../imgs/explore.jpg");
 
   background-size: cover;
@@ -118,7 +115,6 @@ header {
   display: flex;
   align-items: center;
   gap: 12px;
-  
 }
 
 .carousel__btn {
@@ -290,8 +286,7 @@ header {
   font-weight: 700;
   line-height: 50px;
   width: 614px;
-padding-bottom: 32px;
-
+  padding-bottom: 32px;
 }
 
 .info__text {
@@ -326,6 +321,111 @@ padding-bottom: 32px;
   font-weight: 700;
   line-height: 150%;
   margin: 0 auto;
+}
+/* EXPERIENCE ELYA */
+.experience {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)),
+    url("../imgs/experience.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 1476px;
+}
+
+.experience__video {
+  position: relative;
+  width: 1056px;
+  height: 594px;
+  margin: 0 auto 125px;
+}
+
+.play__btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+  font-family: FontAwesome;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 96px;
+  height: 96px;
+  border-radius: 100px;
+  background: #e93a7d;
+}
+
+.experience__title {
+  font-family: "DM Sans", sans-serif;
+  color: white;
+  font-family: "DM Sans";
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  width: 1056px;
+  padding-top: 141px;
+  padding-bottom: 67px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.experience__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience__item-img {
+  width: 233px;
+  border-radius: 5px;
+}
+
+.experience__item-title {
+  font-family: "DM Sans", sans-serif;
+  color: white;
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.experience__item-text {
+  font-family: "DM Sans", sans-serif;
+  color: white;
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  width: 334px;
+  margin: 0;
+  text-align: left;
+  opacity: 0.7;
+}
+.experience__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 41px;
+  width: 600px;
+}
+.experience__list {
+  display: flex;
+  justify-content: center;
+  gap: 75px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* GALLERY USTYNA */
