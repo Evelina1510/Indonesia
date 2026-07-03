@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
 }
 
 .container {
@@ -10,6 +11,62 @@
   padding: 0 15px;
   margin: 0 auto;
 }
+/* vova */
+
+header {
+  padding-bottom: 521px;
+  background-image: url(../imgs/header_bacground.png);
+}
+
+.logo_nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  position: absolute;
+  left: 28px;
+  padding-top: 28px;
+}
+
+.header_nav {
+  padding-top: 48px;
+  margin-left: 64.03px;
+}
+
+.header_list {
+  display: flex;
+  gap: 10px;
+  
+}
+
+
+.header_list_a {
+  text-decoration: none;
+  color: white;
+  font-family: "DM Sans", sans-serif;
+}
+
+.header_svg {
+  width: 24px;
+  fill: white;
+}
+
+.travel_h1 {
+  font-size: 115px;
+  color: white;
+}
+
+.travel_button {
+  font-family: "DM Sans", sans-serif;
+  border-radius: 30px;
+  width: 191px;
+  height: 62px;
+  color: white;
+  background-color: #e3133d;
+  border: none;
+}
+
 /* EXPLORE+NUMBERS ELYA */
 .explore__title {
   font-family: "DM Sans", sans-serif;

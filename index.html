@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -15,19 +16,22 @@
 <header>
     <div class="container">
 
+      <section class="logo_nav">
+        
         <a href="#" class="logo">
            <img src="./imgs/logo.png" alt="">
         </a>
 
         <nav class="header_nav">
-            <ul class="header__list">
-                <li class="header_list_item"><a href="">DESTINATIONS</a></li>
-                <li class="header_list_item"><a href="">EXPERIENCES</a></li>
-                <li class="header_list_item"><a href=""></a>ABOUT</li>
-                <li class="header_list_item"><a href=""></a>GALLERY</li>
+            <ul class="header_list">
+                <li class="header_list_item"><a class="header_list_a" href="#">DESTINATIONS</a></li>
+                <li class="header_list_item"><a class="header_list_a" href="#">EXPERIENCES</a></li>
+                <li class="header_list_item"><a class="header_list_a" href="#">ABOUT</a></li>
+                <li class="header_list_item"><a class="header_list_a" href="#">GALLERY</a></li>
             </ul>
         </nav>
 
+        
         <ul class="header_svg_list">
             <li class="header_svg_list_item"> 
                 <svg class="header_svg">
@@ -41,14 +45,15 @@
                 </svg>
             </li>
         </ul>
-    </div>
-</header>
-    <!-- hero Vova -->
-<section class="hero">
+        
+    
+
+    </section>
 
     <div class="travel_div">
-    <h1>EXPLORE INDONESIA</h1>
-    <button>Start travelling</button>
+    <h1 class="travel_h1">EXPLORE <br>
+      INDONESIA</h1>
+    <button class="travel_button">Start travelling</button>
     </div>
 
     <ul>
@@ -79,10 +84,11 @@
             <img src="./img/play_arrow.png" alt="">
         </li>
     </ul>
+    </div>
+</header>
 
-</section>
-<!-- About Vova -->
- <section class="about">
+ <!-- hero Vova -->
+ <section class="hero">
     <ul>
         <li>
             <img src="./imgs/about1.png" alt="">
