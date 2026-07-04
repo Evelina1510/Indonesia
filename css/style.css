@@ -13,25 +13,28 @@
 }
 /* vova */
 
-header {
 
+header {
+  position: relative;
+  height: 1080px;
   background-image: url(../imgs/header_bacground.png);
 }
 
 .logo_nav {
   display: flex;
   justify-content: space-between;
+ 
 }
 
 .logo {
   position: absolute;
-  left: 28px;
+  left: 1px;
   padding-top: 28px;
 }
 
 .header_nav {
   padding-top: 48px;
-  margin-left: 64.03px;
+  margin-left: 150px;
 }
 
 .header_list {
@@ -54,6 +57,7 @@ header {
 
 .header_svg_list {
   display: flex;
+  gap: 40px;
 }
 
 
@@ -71,6 +75,160 @@ header {
   color: white;
   background-color: #e3133d;
   border: none;
+}
+
+
+
+.about {
+  display: flex;
+  height: 600px;
+}
+
+.about__list {
+  display: flex;
+  background-color: rgb(0, 0, 0, 0.5);
+  height: 210px;
+  width: 1225px;
+  
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.about__list__item {
+  width: 210px;
+  height: 80px;
+  margin-left: 71px;
+  margin-right: 71px;
+}
+
+.about_number {
+  color: #DD2242;
+}
+
+.about_h2 {
+  color: white;
+}
+
+.about_lorem {
+  color: #939393;
+}
+
+
+.about__media {
+  outline: auto;
+  width: 400px;
+  height: 254px;
+
+}
+
+.play_img {
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+.video_img {
+  
+}
+
+.about__media-video {
+  outline: auto;
+  width: 200px;
+  height: 250px;
+}
+/* hero */
+
+.hero {
+    padding: 160px 0;
+    height: 1400px;
+
+   background:
+        linear-gradient(
+            to bottom,
+            rgba(2, 12, 33, 0.75) 0%,
+            rgba(2, 12, 33, 0.98) 100%
+        ),
+
+        linear-gradient(
+            to top,
+            rgba(2, 12, 33, 0.75) 0%,
+            rgba(2, 12, 33, 0.98) 100%
+        ),
+
+        url("../imgs/background_hero_1.png"),
+
+        url("../imgs/background_hero_2.png");
+
+    background-repeat: no-repeat;
+
+    background-size:
+        100% 50%,
+        100% 50%,
+        100% 50%,
+        100% 50%;
+
+    background-position:
+        top,
+        bottom,
+        top,
+        bottom;
+}
+
+
+
+.hero__row {
+    width: 1200px;
+    margin: 0 auto 180px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 130px;
+}
+
+.hero__row--reverse {
+    flex-direction: row;
+}
+
+.hero__img {
+    width: 500px;
+    border-radius: 8px;
+}
+
+.hero__content {
+    width: 420px;
+}
+
+.hero__content h2 {
+    color: white;
+    font-size: 42px;
+    line-height: 52px;
+    margin-bottom: 25px;
+    font-family: "DM Sans", sans-serif;
+}
+
+.hero__content p {
+    color: rgba(255,255,255,.7);
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 35px;
+    font-family: "DM Sans", sans-serif;
+}
+
+.hero__btn {
+    width: 180px;
+    height: 60px;
+
+    border: none;
+    border-radius: 35px;
+
+    background: #DD2242;
+    color: white;
+
+    font-size: 18px;
+    font-weight: 700;
+
+    cursor: pointer;
 }
 
 /* EXPLORE+NUMBERS ELYA */
