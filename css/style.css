@@ -457,10 +457,13 @@ img {
 .gallery__panel {
   display: grid;
   gap: 32px;
+  text-align: center;
+  justify-items: center;
 }
 
 .gallery__content {
   max-width: 560px;
+  margin: 0 auto;
 }
 
 .eyebrow {
@@ -475,21 +478,24 @@ img {
 .gallery h1 {
   font-size: clamp(2.3rem, 3.2vw, 4rem);
   line-height: 1.04;
-  justify-content: center;
-  align-items: center;
+  margin: 0 auto;
+}
+
+.gallery__text {
+  margin: 16px auto 0;
+  max-width: 560px;
 }
 
 .gallery__grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  grid-template-rows: repeat(0, 1fr);
-  gap: 18px;
+  gap: 12px;
 }
 
 .gallery__item {
   border-radius: 28px;
   overflow: hidden;
-  min-height: 220px;
+  min-height: 150px;
   background: #e2e8f0;
 }
 
@@ -505,39 +511,65 @@ img {
 
 .features {
   margin-top: 0;
-  padding: 48px 0 0;
+  padding: 48px 0 80px;
+  background: #DCE8F2;
 }
 
 .features__panel {
   display: grid;
   gap: 32px;
   padding: 60px 40px;
-  border-radius: 0;
-  background: #e9f0f8;
+  border-radius: 28px;
+  background: transparent;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .section-header h2 {
   margin: 0;
-  font-size: clamp(2rem, 2.5vw, 2.8rem);
+  font-size: clamp(2.4rem, 3vw, 3.2rem);
+  line-height: 1.05;
+  color: #0f172a;
 }
 
 .section-header p {
   margin: 18px 0 0;
   max-width: 620px;
   color: #475569;
+  font-size: 1rem;
+  line-height: 1.75;
 }
 
 .steps {
+  position: relative;
   display: grid;
-  gap: 20px;
+  gap: 28px;
   margin-top: 32px;
+  padding-left: 0;
+}
+
+.steps::before {
+  content: "";
+  position: absolute;
+  left: 23px;
+  top: 50px;
+  bottom: 0;
+  width: 2px;
+  background: rgba(15, 23, 42, 0.12);
 }
 
 .step {
   display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 18px;
+  grid-template-columns: 48px minmax(0, 1fr);
+  gap: 24px;
   align-items: start;
+  position: relative;
+  padding-top: 8px;
+}
+
+.step > :not(.step__number) {
+  grid-column: 2;
 }
 
 .step__number {
@@ -550,37 +582,62 @@ img {
   color: white;
   font-weight: 700;
   font-size: 1rem;
+  margin-top: 4px;
+  z-index: 1;
+}
+
+.step__content {
+  display: grid;
+  gap: 10px;
 }
 
 .step h3 {
-  margin: 0 0 10px;
-  font-size: 1.1rem;
+  margin: 0;
+  font-size: 1.05rem;
+  color: #111827;
 }
 
 .step p {
   margin: 0;
-  color: #64748b;
+  color: #000000;
+  line-height: 1.75;
 }
 
 .travel-card {
   border-radius: 28px;
-  overflow: hidden;
-  background: white;
-  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.08);
 }
 
-.travel-card img {
+.travel-card--inline {
+  max-width: 620px;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 18px;
+  align-items: center;
+  overflow: hidden;
+  padding: 18px;
+}
+
+.travel-card--inline img {
   width: 100%;
-  height: 220px;
+  height: 180px;
   object-fit: cover;
+  border-radius: 18px;
 }
 
 .travel-card__body {
-  padding: 24px;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.step .travel-card--inline {
+  margin-top: 24px;
+  width: 100%;
 }
 
 .travel-card__label {
-  margin: 0 0 14px;
+  margin: 0 0 10px;
   font-size: 1rem;
   font-weight: 700;
   color: #0f172a;
@@ -604,42 +661,62 @@ img {
 }
 
 .button--secondary {
-  margin-top: 18px;
+  margin-top: 0;
   background: #ef3340;
   color: white;
 }
 
 .site-footer {
   margin-top: 0;
+  background: #070f22;
+  color: #e2e8f0;
 }
 
 .footer__inner {
+  width: min(1140px, calc(100% - 40px));
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 16px;
-  padding: 24px 40px;
-  border-radius: 0;
-  background: #0f172a;
-  color: #e2e8f0;
+  gap: 24px;
+  padding: 28px 0;
+}
+
+.footer__brand-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer__logo {
+  width: 30px;
+  height: auto;
+  display: block;
 }
 
 .footer__brand {
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  letter-spacing: 0.02em;
+}
+
+.footer__brand-highlight {
+  color: #ef3340;
 }
 
 .footer__nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 18px;
+  gap: 24px;
+  justify-content: center;
 }
 
 .footer__nav a {
   color: #cbd5e1;
   text-decoration: none;
   transition: color 0.2s ease;
+  font-size: 0.95rem;
 }
 
 .footer__nav a:hover {
@@ -649,6 +726,7 @@ img {
 .footer__copyright {
   margin: 0;
   color: #94a3b8;
+  font-size: 0.95rem;
 }
 
 @media (max-width: 980px) {
