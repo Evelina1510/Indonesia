@@ -134,6 +134,60 @@ header {
   width: 200px;
   height: 250px;
 }
+
+.social {
+    position: absolute;
+    left: 35px;
+    top: 120px;
+    z-index: 20;
+}
+
+.social__line {
+    position: relative;
+    width: 2px;
+    height: 330px;
+    background: rgba(255,255,255,.8);
+    margin-left: 3px; /* центрує білу лінію */
+}
+
+.social__line-red {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 4px;      /* товстіша */
+    height: 85px;
+    background: #DD2242;
+}
+
+.social__number {
+    margin-top: 12px;
+
+    color: white;
+    font-size: 18px;
+    font-family: "DM Sans", sans-serif;
+
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+
+.social__list {
+    margin-top: 120px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.social__list a {
+    color: white;
+    text-decoration: none;
+    font-family: "DM Sans", sans-serif;
+
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
 /* hero */
 
 .hero {
