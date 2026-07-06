@@ -9,6 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -51,8 +52,9 @@
         </section>
 
         <div class="travel_div">
-            <h1 class="travel_h1">
+            <h1 class="travel_h1"data-aos="fade-right">
                 EXPLORE <br> INDONESIA
+                
             </h1>
 
             <button class="travel_button">Start travelling</button>
@@ -133,7 +135,7 @@
                 mollis rhoncus.
             </p>
 
-            <button class="hero__btn">Learn More</button>
+            <button class="hero__btn" data-aos="zoom-in">Learn More</button>
         </div>
     </div>
 
@@ -148,7 +150,7 @@
                 mollis rhoncus.
             </p>
 
-            <button class="hero__btn">Learn More</button>
+            <button class="hero__btn" data-aos="zoom-in">Learn More</button>
         </div>
 
         <img class="hero__img"
@@ -240,21 +242,21 @@
       </p>
       <ul class="numbers__list">
         <li class="numbers__item">
-          <p class="numbers__value">100+</p>
+          <p class="numbers__value" data-aos="flip-left">100+</p>
           <p class="numbers__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Fusce commodo magna et libero.
           </p>
         </li>
         <li class="numbers__item">
-          <p class="numbers__value">43,000+</p>
+          <p class="numbers__value" data-aos="flip-left">43,000+</p>
           <p class="numbers__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Fusce commodo.
           </p>
         </li>
         <li class="numbers__item">
-          <p class="numbers__value">30+</p>
+          <p class="numbers__value" data-aos="flip-left">30+</p>
           <p class="numbers__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Fusce commodo magna et libero.
@@ -270,7 +272,7 @@
     <div class="info__content">
     <h2 class="info__title">Our hills and valleys are like nothing you’ve seen.</h2>
     <p class="info__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet magna commodo, tempus dolor sit amet, laoreet elit. Donec mauris tortor.</p>
-    <button class="info__button">Learn More</button>
+    <button class="info__button" data-aos="zoom-in">Learn More</button>
   </div>
   </div>
  </section>
@@ -393,7 +395,7 @@
           </article>
         </div>
         <div class="features__actions">
-          <a class="button button--secondary" href="#">Learn More</a>
+          <a class="button button--secondary" data-aos="zoom-in" href="#">Learn More</a>
         </div>
       </div>
       </div>
@@ -416,6 +418,14 @@
       </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
   <script src="./js/modal.js"></script>
 </body>
 </html>
