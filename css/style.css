@@ -1052,6 +1052,9 @@ header{
 }
 
 
+.social {
+  display: none;
+}
 
 .explore__title{
     font-size:42px;
