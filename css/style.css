@@ -970,6 +970,431 @@ img {
 
 
 
+
+@media screen and (max-width:1024px){
+
+.container{
+    max-width:960px;
+    padding:0 25px;
+}
+
+header{
+    height:900px;
+    background-position:center;
+}
+
+.logo{
+    left:20px;
+}
+
+.logo img{
+    width:150px;
+}
+
+.header_nav{
+    margin-left:80px;
+}
+
+.header_list{
+    gap:35px;
+}
+
+.travel_div{
+    margin-top:120px;
+}
+
+.travel_h1{
+    font-size:82px;
+    line-height:82px;
+}
+
+.travel_button{
+    width:220px;
+    height:65px;
+}
+
+
+.about{
+    position:absolute;
+    bottom:0;
+    width:100%;
+}
+
+.about__list{
+    width:68%;
+    padding:0 30px;
+}
+
+.about__list__item{
+    width:180px;
+}
+
+.about_h2{
+    font-size:18px;
+}
+
+.about_lorem{
+    font-size:14px;
+    line-height:22px;
+}
+
+.about__media-video{
+    width:340px;
+    height:220px;
+    margin-left:-40px;
+}
+
+.play_img{
+    width:65px;
+    height:65px;
+}
+
+.hero{
+    height:auto;
+    padding:120px 0;
+}
+
+.hero__row{
+    width:100%;
+    gap:70px;
+    margin-bottom:120px;
+}
+
+.hero__img{
+    width:420px;
+}
+
+.hero__content{
+    width:360px;
+}
+
+.hero__content h2{
+    font-size:34px;
+    line-height:42px;
+}
+
+.hero__content p{
+    font-size:16px;
+}
+
+.social {
+  display: none;
+}
+
+.explore__title{
+    font-size:42px;
+    padding-top:90px;
+    padding-bottom:35px;
+}
+
+.carousel{
+    gap:8px;
+}
+
+.carousel__slide{
+    width:calc((100% - 16px)/3);
+}
+
+.carousel__dots{
+    padding-bottom:180px;
+}
+
+.numbers{
+    padding:100px 0;
+}
+
+.numbers__title{
+    font-size:46px;
+    padding-top:0;
+    padding-bottom:25px;
+}
+
+.numbers__subtitle{
+    width:650px;
+    font-size:17px;
+    padding-bottom:50px;
+}
+
+.numbers__list{
+    gap:45px;
+    margin-top:40px;
+}
+
+.numbers__item{
+    max-width:250px;
+    padding-bottom:0;
+}
+
+.numbers__value{
+    font-size:38px;
+}
+
+.numbers__text{
+    font-size:16px;
+    line-height:26px;
+}
+
+
+
+.info{
+    padding:220px 40px;
+
+    background-size:700px,700px;
+}
+
+.info__title{
+    width:700px;
+    font-size:38px;
+    line-height:46px;
+}
+
+.info__text{
+    width:600px;
+    font-size:17px;
+    line-height:28px;
+}
+
+.info__button{
+    width:230px;
+    height:60px;
+    padding:0;
+}
+
+
+
+.experience{
+    height:auto;
+    padding:100px 0;
+}
+
+.experience__title{
+    width:100%;
+    padding:0;
+    margin-bottom:50px;
+
+    font-size:38px;
+    line-height:48px;
+}
+
+.experience__video{
+    width:100%;
+    max-width:900px;
+    height:auto;
+
+    margin:0 auto 60px;
+}
+
+.experience__video img{
+    width:100%;
+    border-radius:10px;
+}
+
+.play__btn{
+    width:80px;
+    height:80px;
+}
+
+.experience__list{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+}
+
+.experience__item{
+    width:280px;
+    flex-direction:column;
+    align-items:center;
+    gap:18px;
+}
+
+.experience__item-img{
+    width:100%;
+}
+
+.experience__content{
+    text-align:center;
+}
+
+.experience__item-title{
+    text-align:center;
+    font-size:20px;
+}
+
+.experience__item-text{
+    width:100%;
+    text-align:center;
+    font-size:15px;
+    line-height:24px;
+}
+
+
+
+.gallery{
+    padding:90px 0;
+}
+
+.gallery__content{
+    max-width:700px;
+}
+
+.gallery h1{
+    font-size:42px;
+}
+
+.gallery__text{
+    font-size:17px;
+    line-height:28px;
+}
+
+.gallery__grid{
+    grid-template-columns:repeat(3,1fr);
+    gap:14px;
+}
+
+.gallery__item{
+    min-height:180px;
+    border-radius:18px;
+}
+
+.gallery__item--large{
+    grid-row:span 2;
+}
+
+
+
+.features{
+    padding:80px 0;
+}
+
+.features__panel{
+    max-width:900px;
+    padding:40px 20px;
+    gap:40px;
+}
+
+.section-header{
+    text-align:center;
+}
+
+.section-header h2{
+    font-size:42px;
+    line-height:48px;
+    margin-bottom:20px;
+}
+
+.section-header p{
+    max-width:650px;
+    margin:0 auto;
+    font-size:17px;
+    line-height:28px;
+}
+
+.steps{
+    gap:35px;
+}
+
+.steps::before{
+    left:23px;
+}
+
+.step{
+    grid-template-columns:48px 1fr;
+    gap:20px;
+}
+
+.step__number{
+    width:48px;
+    height:48px;
+    font-size:18px;
+}
+
+.step h3{
+    font-size:22px;
+    margin-bottom:8px;
+}
+
+.step p{
+    font-size:16px;
+    line-height:28px;
+}
+
+.travel-card--inline{
+    grid-template-columns:180px 1fr;
+    gap:20px;
+}
+
+.travel-card--inline img{
+    height:160px;
+}
+
+.travel-card__label{
+    font-size:18px;
+}
+
+.button--secondary{
+    width:230px;
+    height:58px;
+    font-size:18px;
+}
+
+
+
+.site-footer{
+    padding:50px 0;
+}
+
+.footer__inner{
+    width:100%;
+    padding:0 25px;
+
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items:center;
+    gap:30px;
+}
+
+.footer__brand-wrap{
+    gap:15px;
+}
+
+.footer__logo{
+    width:34px;
+}
+
+.footer__brand{
+    font-size:20px;
+}
+
+.footer__nav{
+    display:flex;
+    gap:25px;
+}
+
+.footer__nav a{
+    font-size:15px;
+}
+
+.footer__social{
+    display:flex;
+    gap:20px;
+}
+
+.footer__social svg{
+    width:18px;
+    height:18px;
+}
+
+.footer__copyright{
+    width:100%;
+    text-align:center;
+    margin-top:20px;
+    font-size:15px;
+}
+
+}
+
+
 @media screen and (max-width:480px)
 {
 
@@ -1185,7 +1610,7 @@ header{
 }
 
 .carousel__btn{
-    display:none;
+    
 }
 
 .carousel__outer{
