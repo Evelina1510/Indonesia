@@ -70,7 +70,7 @@ header {
   width: 191px;
   height: 62px;
   color: white;
-  background-color: #e3133d;
+  background-color: var(--secondary-button-color);
   border: none;
 }
 
@@ -108,7 +108,7 @@ header {
 }
 
 .about_number {
-  color: #dd2242;
+  color: var(--primary-button-color);
 }
 
 .about_h2 {
@@ -116,7 +116,7 @@ header {
 }
 
 .about_lorem {
-  color: #939393;
+  color: var(--secondary-text-color);
 }
 
 .about__media {
@@ -132,7 +132,7 @@ header {
   transform: translate(-50%, -50%);
   height: 78px;
   width: 80px;
-  background-color: white;
+  background-color: var(--play-button-color);
   border-radius: 40px;
 }
 
@@ -157,6 +157,10 @@ header {
   left: 35px;
   top: 120px;
   z-index: 20;
+}
+
+.travel-card__more {
+  display: none;
 }
 
 .social__line {
@@ -535,6 +539,7 @@ header {
   align-items: center;
   gap: 24px;
   border-radius: 122px;
+  border: none;
   background: #dd2242;
   color: #fff;
   text-align: center;
@@ -584,6 +589,7 @@ header {
   height: 96px;
   border-radius: 100px;
   background: #e93a7d;
+  border: none;
 }
 
 .experience__title {
@@ -605,11 +611,17 @@ header {
   flex-direction: column;
 }
 
-.experience__item-img {
+.experience__item picture {
+  display: block;
   width: 233px;
-  border-radius: 5px;
 }
 
+.experience__item-img {
+  width: 100%;
+  height: 151px;
+  object-fit: cover;
+  display: block;
+}
 .experience__item-title {
   font-family: "DM Sans", sans-serif;
   color: white;
@@ -805,7 +817,6 @@ img {
 
 .step__content {
   display: grid;
-  gap: 10px;
 }
 
 .step h3 {
@@ -834,6 +845,7 @@ img {
   overflow: hidden;
   padding: 18px;
 }
+
 
 .travel-card--inline img {
   width: 100%;
@@ -946,427 +958,421 @@ img {
   font-size: 0.95rem;
 }
 
-@media screen and (max-width:1024px){
-
-.container{
-    max-width:960px;
-    padding:0 25px;
-}
-
-header{
-    height:900px;
-    background-position:center;
-}
-
-.logo{
-    left:20px;
-}
-
-.logo img{
-    width:150px;
-}
-
-.header_nav{
-    margin-left:80px;
-}
-
-.header_list{
-    gap:35px;
-}
-
-.travel_div{
-    margin-top:120px;
-}
-
-.travel_h1{
-    font-size:82px;
-    line-height:82px;
-}
-
-.travel_button{
-    width:220px;
-    height:65px;
-}
-
-.about{
-    position:absolute;
-    bottom:0;
-    width:100%;
-}
-
-.about__list{
-    width:68%;
-    padding:0 30px;
-}
-
-.about__list__item{
-    width:180px;
-}
-
-.about_h2{
-    font-size:18px;
-}
-
-.about_lorem{
-    font-size:14px;
-    line-height:22px;
-}
-
-.about__media-video{
-    width:340px;
-    height:220px;
-    margin-left:-40px;
-}
-
-.play_img{
-    width:65px;
-    height:65px;
-}
-
-.hero{
-    height:auto;
-    padding:120px 0;
-}
-
-.hero__row{
-    width:100%;
-    gap:70px;
-    margin-bottom:120px;
-}
-
-.hero__img{
-    width:420px;
-}
-
-.hero__content{
-    width:360px;
-}
-
-.hero__content h2{
-    font-size:34px;
-    line-height:42px;
-}
-
-.hero__content p{
-    font-size:16px;
-}
-
-
-.social {
+.step__more {
   display: none;
 }
-
-.explore__title{
-    font-size:42px;
-    padding-top:90px;
-    padding-bottom:35px;
-}
-
-.carousel{
-    gap:8px;
-}
-
-.carousel__slide{
-    width:calc((100% - 16px)/3);
-}
-
-.carousel__dots{
-    padding-bottom:180px;
-}
-
-.numbers{
-    padding:100px 0;
-}
-
-.numbers__title{
-    font-size:46px;
-    padding-top:0;
-    padding-bottom:25px;
-}
-
-.numbers__subtitle{
-    width:650px;
-    font-size:17px;
-    padding-bottom:50px;
-}
-
-.numbers__list{
-    gap:45px;
-    margin-top:40px;
-}
-
-.numbers__item{
-    max-width:250px;
-    padding-bottom:0;
-}
-
-.numbers__value{
-    font-size:38px;
-}
-
-.numbers__text{
-    font-size:16px;
-    line-height:26px;
-}
-
-
-
-.info{
-    padding:220px 40px;
-
-    background-size:700px,700px;
-}
-
-.info__title{
-    width:700px;
-    font-size:38px;
-    line-height:46px;
-}
-
-.info__text{
-    width:600px;
-    font-size:17px;
-    line-height:28px;
-}
-
-.info__button{
-    width:230px;
-    height:60px;
-    padding:0;
-}
-
-
-
-.experience{
-    height:auto;
-    padding:100px 0;
-}
-
-.experience__title{
-    width:100%;
-    padding:0;
-    margin-bottom:50px;
-
-    font-size:38px;
-    line-height:48px;
-}
-
-.experience__video{
-    width:100%;
-    max-width:900px;
-    height:auto;
-
-    margin:0 auto 60px;
-}
-
-.experience__video img{
-    width:100%;
-    border-radius:10px;
-}
-
-.play__btn{
-    width:80px;
-    height:80px;
-}
-
-.experience__list{
-    display:flex;
-    justify-content:center;
-    gap:30px;
-}
-
-.experience__item{
-    width:280px;
-    flex-direction:column;
-    align-items:center;
-    gap:18px;
-}
-
-.experience__item-img{
-    width:100%;
-}
-
-.experience__content{
-    text-align:center;
-}
-
-.experience__item-title{
-    text-align:center;
-    font-size:20px;
-}
-
-.experience__item-text{
-    width:100%;
-    text-align:center;
-    font-size:15px;
-    line-height:24px;
-}
-
-
-
-.gallery{
-    padding:90px 0;
-}
-
-.gallery__content{
-    max-width:700px;
-}
-
-.gallery h1{
-    font-size:42px;
-}
-
-.gallery__text{
-    font-size:17px;
-    line-height:28px;
-}
-
-.gallery__grid{
-    grid-template-columns:repeat(3,1fr);
-    gap:14px;
-}
-
-.gallery__item{
-    min-height:180px;
-    border-radius:18px;
-}
-
-.gallery__item--large{
-    grid-row:span 2;
-}
-
-
-
-.features{
-    padding:80px 0;
-}
-
-.features__panel{
-    max-width:900px;
-    padding:40px 20px;
-    gap:40px;
-}
-
-.section-header{
-    text-align:center;
-}
-
-.section-header h2{
-    font-size:42px;
-    line-height:48px;
-    margin-bottom:20px;
-}
-
-.section-header p{
-    max-width:650px;
-    margin:0 auto;
-    font-size:17px;
-    line-height:28px;
-}
-
-.steps{
-    gap:35px;
-}
-
-.steps::before{
-    left:23px;
-}
-
-.step{
-    grid-template-columns:48px 1fr;
-    gap:20px;
-}
-
-.step__number{
-    width:48px;
-    height:48px;
-    font-size:18px;
-}
-
-.step h3{
-    font-size:22px;
-    margin-bottom:8px;
-}
-
-.step p{
-    font-size:16px;
-    line-height:28px;
-}
-
-.travel-card--inline{
-    grid-template-columns:180px 1fr;
-    gap:20px;
-}
-
-.travel-card--inline img{
-    height:160px;
-}
-
-.travel-card__label{
-    font-size:18px;
-}
-
-.button--secondary{
-    width:230px;
-    height:58px;
-    font-size:18px;
-}
-
-
-
-.site-footer{
-    padding:50px 0;
-}
-
-.footer__inner{
-    width:100%;
-    padding:0 25px;
-
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:space-between;
-    align-items:center;
-    gap:30px;
-}
-
-.footer__brand-wrap{
-    gap:15px;
-}
-
-.footer__logo{
-    width:34px;
-}
-
-.footer__brand{
-    font-size:20px;
-}
-
-.footer__nav{
-    display:flex;
-    gap:25px;
-}
-
-.footer__nav a{
-    font-size:15px;
-}
-
-.footer__social{
-    display:flex;
-    gap:20px;
-}
-
-.footer__social svg{
-    width:18px;
-    height:18px;
-}
-
-.footer__copyright{
-    width:100%;
-    text-align:center;
-    margin-top:20px;
-    font-size:15px;
-}
-
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 960px;
+    padding: 0 25px;
+  }
+
+  header {
+    height: 900px;
+    background-position: center;
+  }
+
+  .logo {
+    left: 20px;
+  }
+
+  .logo img {
+    width: 150px;
+  }
+
+  .header_nav {
+    margin-left: 80px;
+  }
+
+  .header_list {
+    gap: 35px;
+  }
+
+  .travel_div {
+    margin-top: 120px;
+  }
+
+  .travel_h1 {
+    font-size: 82px;
+    line-height: 82px;
+  }
+
+  .travel_button {
+    width: 220px;
+    height: 65px;
+  }
+
+  .about {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .about__list {
+    width: 68%;
+    padding: 0 30px;
+  }
+
+  .about__list__item {
+    width: 180px;
+  }
+
+  .about_h2 {
+    font-size: 18px;
+  }
+
+  .about_lorem {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .about__media-video {
+    width: 340px;
+    height: 220px;
+    margin-left: -40px;
+  }
+
+  .play_img {
+    width: 65px;
+    height: 65px;
+  }
+
+  .hero {
+    height: auto;
+    padding: 120px 0;
+  }
+
+  .hero__row {
+    width: 100%;
+    gap: 70px;
+    margin-bottom: 120px;
+  }
+
+  .hero__img {
+    width: 420px;
+  }
+
+  .hero__content {
+    width: 360px;
+  }
+
+  .hero__content h2 {
+    font-size: 34px;
+    line-height: 42px;
+  }
+
+  .hero__content p {
+    font-size: 16px;
+  }
+
+  .social {
+    display: none;
+  }
+
+  .explore__title {
+    font-size: 42px;
+    padding-top: 90px;
+    padding-bottom: 35px;
+  }
+
+  .carousel {
+    gap: 8px;
+  }
+
+  .carousel__slide {
+    width: calc((100% - 16px) / 3);
+  }
+
+  .carousel__dots {
+    padding-bottom: 180px;
+  }
+
+  .numbers {
+    padding: 100px 0;
+  }
+
+  .numbers__title {
+    font-size: 46px;
+    padding-top: 0;
+    padding-bottom: 25px;
+  }
+
+  .numbers__subtitle {
+    width: 650px;
+    font-size: 17px;
+    padding-bottom: 50px;
+  }
+
+  .numbers__list {
+    gap: 45px;
+    margin-top: 40px;
+  }
+
+  .numbers__item {
+    max-width: 250px;
+    padding-bottom: 0;
+  }
+
+  .numbers__value {
+    font-size: 38px;
+  }
+
+  .numbers__text {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .info {
+    padding: 220px 40px;
+
+    background-size: 700px, 700px;
+  }
+
+  .info__title {
+    width: 700px;
+    font-size: 38px;
+    line-height: 46px;
+  }
+
+  .info__text {
+    width: 600px;
+    font-size: 17px;
+    line-height: 28px;
+  }
+
+  .info__button {
+    width: 230px;
+    height: 60px;
+    padding: 0;
+  }
+
+  .experience {
+    height: auto;
+    padding: 100px 0;
+  }
+
+  .experience__title {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 50px;
+
+    font-size: 38px;
+    line-height: 48px;
+  }
+
+  .experience__video {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+
+    margin: 0 auto 60px;
+  }
+
+  .experience__video img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .play__btn {
+    width: 80px;
+    height: 80px;
+  }
+
+  .experience__list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .experience__item {
+    width: 280px;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .experience__item-img {
+    width: 100%;
+  }
+
+  .experience__content {
+    text-align: center;
+  }
+
+  .experience__item-title {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .experience__item-text {
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .gallery {
+    padding: 90px 0;
+  }
+
+  .gallery__content {
+    max-width: 700px;
+  }
+
+  .gallery h1 {
+    font-size: 42px;
+  }
+
+  .gallery__text {
+    font-size: 17px;
+    line-height: 28px;
+  }
+
+  .gallery__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+  }
+
+  .gallery__item {
+    min-height: 180px;
+    border-radius: 18px;
+  }
+
+  .gallery__item--large {
+    grid-row: span 2;
+  }
+
+  .features {
+    padding: 80px 0;
+  }
+
+  .features__panel {
+    max-width: 900px;
+    padding: 40px 20px;
+    gap: 40px;
+  }
+
+  .section-header {
+    text-align: center;
+  }
+
+  .section-header h2 {
+    font-size: 42px;
+    line-height: 48px;
+    margin-bottom: 20px;
+  }
+
+  .section-header p {
+    max-width: 650px;
+    margin: 0 auto;
+    font-size: 17px;
+    line-height: 28px;
+  }
+
+  .steps {
+    gap: 35px;
+  }
+
+  .steps::before {
+    left: 23px;
+  }
+
+  .step {
+    grid-template-columns: 48px 1fr;
+    gap: 20px;
+  }
+
+  .step__number {
+    width: 48px;
+    height: 48px;
+    font-size: 18px;
+  }
+
+  .step h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+
+  .step p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .travel-card--inline {
+    grid-template-columns: 180px 1fr;
+    gap: 20px;
+  }
+
+  .travel-card--inline img {
+    height: 160px;
+  }
+
+  .travel-card__more {
+    display: none;
+  }
+
+  .travel-card__label {
+    font-size: 18px;
+  }
+
+  .button--secondary {
+    width: 230px;
+    height: 58px;
+    font-size: 18px;
+  }
+
+  .site-footer {
+    padding: 50px 0;
+  }
+
+  .footer__inner {
+    width: 100%;
+    padding: 0 25px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .footer__brand-wrap {
+    gap: 15px;
+  }
+
+  .footer__logo {
+    width: 34px;
+  }
+
+  .footer__brand {
+    font-size: 20px;
+  }
+
+  .footer__nav {
+    display: flex;
+    gap: 25px;
+  }
+
+  .footer__nav a {
+    font-size: 15px;
+  }
+
+  .footer__social {
+    display: flex;
+    gap: 20px;
+  }
+
+  .footer__social svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .footer__copyright {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -1653,108 +1659,99 @@ header{
   }
 
   .info {
-    padding: 90px 0;
-    background-size: 500px, 500px;
-    background-position:
-      left top,
-      right bottom;
+    padding: 125px 44px;
+    background-size: 200px, 600px;
   }
 
   .info__title {
-    width: 100%;
-    font-size: 34px;
-    line-height: 42px;
-    margin-bottom: 25px;
+    width: 314px;
+    font-size: 40px;
+    line-height: 46px;
+    padding-bottom: 36px;
   }
 
   .info__text {
-    width: 100%;
+    width: 314px;
     font-size: 16px;
-    line-height: 28px;
-    margin-bottom: 30px;
+    line-height: 24px;
+    height: 120px;
   }
 
   .info__button {
-    width: 100%;
-    height: 60px;
-    padding: 0;
+    width: 314px;
     border: none;
-    border-radius: 35px;
+    margin-top: 41px;
     font-size: 18px;
   }
 
   .experience {
-  height: auto;
-  padding: 70px 0;
-  background-size: cover;
-  background-position: center;
-}
+    height: auto;
+    padding: 83px 0;
+    background-size: cover;
+    background-position: center;
+  }
 
-.experience__title {
-  width: 279px;
-  margin: 0 auto 40px;
-  padding: 0;
-  font-size: 40px;
-  line-height: 46px;
-  text-align: center;
-}
+  .experience__title {
+    width: 279px;
+    margin: 0 auto 40px;
+    padding: 0;
+    font-size: 40px;
+    line-height: 46px;
+    text-align: center;
+  }
 
-.experience__video {
-  width: 100%;
-  height: auto;
-  margin: 0 auto 50px;
-}
+  .experience__video img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+  }
 
-.experience__video img {
-  width: 100%;
-  display: block;
-  border-radius: 6px;
-}
+  .play__btn {
+    width: 72px;
+    height: 72px;
+    font-size: 22px;
+  }
 
-.play__btn {
-  width: 72px;
-  height: 72px;
-  font-size: 22px;
-}
+  .experience__list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
 
-.experience__list {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
+  .experience__item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
 
-.experience__item {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-}
+  .experience__item-img {
+    width: 313px;
+    height: 173.1px;
+    display: block;
+    border-radius: 5px;
+  }
 
-.experience__item-img {
-  width: 100%;
-  display: block;
-  border-radius: 4px;
-}
+  .experience__content {
+    text-align: center;
+  }
 
-.experience__content {
-  text-align: center;
-}
+  .experience__item-title {
+    font-size: 22px;
+    margin-bottom: 19px;
+    margin-top: 40px;
+    text-align: center;
+  }
 
-.experience__item-title {
-  font-size: 20px;
-  margin-bottom: 14px;
-  text-align: center;
-}
-
-.experience__item-text {
-  width: 100%;
-  max-width: 290px;
-  margin: 0 auto;
-  font-size: 15px;
-  line-height: 24px;
-  text-align: center;
-  opacity: 0.7;
-}
+  .experience__item-text {
+    width: 312px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    opacity: 0.7;
+  }
   .gallery {
     padding: 70px 0;
   }
@@ -1765,13 +1762,22 @@ header{
 
   .gallery h1 {
     font-size: 34px;
-    margin-bottom: 18px;
+    margin-bottom: 20px;
   }
 
   .gallery__text {
-    font-size: 15px;
-    line-height: 25px;
-    margin-bottom: 35px;
+    color: #6f7787;
+    text-align: center;
+    font-feature-settings:
+      "liga" off,
+      "clig" off;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    width: 312px;
   }
 
   .gallery__grid {
@@ -1797,23 +1803,16 @@ header{
   }
 
   .features {
-    padding: 70px 0 0;
+    padding-top: 29px;
+    padding-bottom: 32px;
     background: #dce8f2;
   }
 
-  .features__panel {
-    padding: 0;
-    gap: 40px;
-  }
-
-  .section-header {
-    text-align: center;
-  }
-
+ 
   .section-header h2 {
-    font-size: 36px;
-    line-height: 42px;
-    margin-bottom: 15px;
+    font-size: 40px;
+    line-height: 46px;
+    margin-bottom: 0;
   }
 
   .section-header p {
@@ -1821,46 +1820,77 @@ header{
   }
 
   .steps {
-    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+
   }
 
   .steps::before {
-    left: 23px;
+    display: none;
   }
 
+  .features__panel {
+  gap: 45px;
+}
+
   .step {
-    grid-template-columns: 48px 1fr;
-    gap: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 0;
   }
 
   .step__number {
-    width: 48px;
-    height: 48px;
-    font-size: 18px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    font-size: 24px;
+
   }
 
-  .step h3 {
-    font-size: 18px;
-    margin-bottom: 6px;
+  .step__content h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
   }
 
-  .step p {
-    font-size: 14px;
-    line-height: 22px;
+  .step__content p {
+    font-size: 15px;
+    line-height: 24px;
     color: #777;
+    max-width: 260px;
+    margin: 0 auto;
+  }
+  .step__text {
+    max-height: 22px;
+    overflow: hidden;
+  }
+
+  .step__more {
+    display: inline-block;
+    color: #dd2242;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    line-height: 24px;
+    letter-spacing: 0.5px;
   }
 
   .travel-card--inline {
-    display: block;
-    padding: 0;
-    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
   }
 
   .travel-card--inline img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 15px;
+    width: 314px;
+    height: 208px;
+    border-radius: 7px;
+    margin-bottom: 40px;
   }
 
   .travel-card__body {
@@ -1868,19 +1898,25 @@ header{
   }
 
   .travel-card__label {
-    font-size: 16px;
-    margin-bottom: 8px;
+    display: none;
+  }
+
+  .travel-card__body p:last-child {
+    max-width: 260px;
+    margin: 0 auto;
+    font-size: 15px;
+    line-height: 24px;
+    color: #777;
   }
 
   .features__actions {
-    margin-top: 15px;
+    display: none;
   }
 
   .button--secondary {
-    width: 100%;
-    height: 58px;
-    border-radius: 35px;
-    font-size: 18px;
+    width: 314px;
+    max-width: 100%;
+    height: 60px;
   }
 
   .site-footer {
@@ -1901,6 +1937,24 @@ header{
     justify-content: center;
   }
 
+  .travel-card__text {
+    max-height: 22px;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 22px;
+    color: #8b8b8b;
+    margin-bottom: 4px;
+  }
+
+  .travel-card__more {
+    display: inline-block;
+    color: #dd2242;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+  }
   .footer__logo {
     width: 36px;
   }
