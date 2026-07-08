@@ -194,7 +194,7 @@
     </section>
     <!-- Explore and Numbers Elya -->
     <section class="explore-numbers">
-      <img class="explore__bg" src="./imgs/explore.jpg" alt="" />
+      <img class="explore__bg" src="./imgs/explore@1x.jpg" alt="" />
 
       <div class="explore">
         <div class="container">
@@ -408,28 +408,54 @@
           </div>
           <div class="gallery__grid">
             <div class="gallery__item gallery__item--large">
-              <img src="./imgs/women.png" alt="Women in a village" />
+              <picture>
+                <source
+                  srcset="./imgs/women@1x.jpg 1x, ./imgs/women@2x.jpg 2x"
+                />
+                <img src="./imgs/women.jpg" alt="Women in a village" />
+              </picture>
             </div>
             <div class="gallery__item">
-              <img src="./imgs/small.png" alt="Mountain view from afar" />
+              <picture>
+                <source
+                  srcset="./imgs/small@1x.jpg 1x, ./imgs/small@2x.jpg 2x"
+                />
+                <img src="./imgs/small.jpg" alt="Mountain view from afar" />
+              </picture>
             </div>
             <div class="gallery__item">
-              <img src="./imgs/boy.png" alt="Boy in a field" />
+              <picture>
+                <source srcset="./imgs/boy@1x.jpg 1x, ./imgs/boy@2x.jpg 2x" />
+                <img src="./imgs/boy.jpg" alt="Boy in a field" />
+              </picture>
             </div>
             <div class="gallery__item">
-              <img src="./imgs/mountin.png" alt="Tropical coastline" />
+              <picture>
+                <source
+                  srcset="./imgs/mountain@1x.jpg 1x, ./imgs/mountain@2x.jpg 2x"
+                />
+                <img src="./imgs/mountain.jpg" alt="Tropical coastline" />
+              </picture>
             </div>
             <div class="gallery__item">
-              <img
-                src="./imgs/big sea.png"
-                alt="Big waves crashing on the shore"
-              />
+              <picture>
+                <source
+                  srcset="./imgs/big_sea@1x.jpg 1x, ./imgs/big_sea@2x.jpg 2x"
+                />
+                <img
+                  src="./imgs/big_sea.jpg"
+                  alt="Big waves crashing on the shore"
+                />
+              </picture>
             </div>
             <div class="gallery__item">
-              <img
-                src="./imgs/sea.png"
-                alt="Aerial view of a tropical coastline"
-              />
+              <picture>
+                <source srcset="./imgs/sea@1x.jpg 1x, ./imgs/sea@2x.jpg 2x" />
+                <img
+                  src="./imgs/sea.jpg"
+                  alt="Aerial view of a tropical coastline"
+                />
+              </picture>
             </div>
           </div>
         </div>
@@ -441,10 +467,6 @@
         <div class="features__panel">
           <div class="section-header">
             <h2>Getting there</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-              dapibus mauris in lectus laoreet, eget tincidunt lacus varius.
-            </p>
           </div>
           <div class="steps">
             <article class="step">
@@ -454,7 +476,9 @@
                 <p class="step__text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Phasellus dapibus mauris in lectus tempus, eget tincidunt
-                  lacus varius.
+                  lacus varius. Sed euismod orci dictum faucibus malesuada.
+                  Praesent sed eros tincidunt, viverra neque auctor, lobortis
+                  enim.
                 </p>
                 <a href="#" class="step__more">Show more</a>
               </div>
@@ -467,16 +491,23 @@
                 <p class="step__text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Phasellus dapibus mauris in lectus tempus, eget tincidunt
-                  lacus varius.
+                  lacus varius. Sed euismod orci dictum faucibus malesuada.
+                  Praesent sed eros tincidunt, viverra neque auctor, lobortis
+                  enim.
                 </p>
 
                 <a href="#" class="step__more">Show more</a>
               </div>
               <div class="travel-card travel-card--inline">
-                <img src="./imgs/Video.png" alt="Travelling there" />
+                <picture>
+                  <source
+                    srcset="./imgs/bike@1x.jpg 1x, ./imgs/bike@2x.jpg 2x"
+                  />
+                  <img src="./imgs/bike.jpg" alt="Travelling there" />
+                </picture>
 
                 <div class="travel-card__body">
-                  <p class="travel-card__label">Travelling there</p>
+                  <h3 class="travel-card__label">Travelling there</h3>
 
                   <p class="travel-card__text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -495,7 +526,9 @@
                 <p class="step__text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Phasellus dapibus mauris in lectus tempus, eget tincidunt
-                  lacus varius.
+                  lacus varius. Sed euismod orci dictum faucibus malesuada.
+                  Praesent sed eros tincidunt, viverra neque auctor, lobortis
+                  enim.
                 </p>
 
                 <a href="#" class="step__more">Show more</a>

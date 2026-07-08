@@ -1,3 +1,21 @@
+:root {
+  --main-red: #dd2242;
+  --blue-background: #010a20;
+  --white: #ffffff;
+  --text-lighten: #e0e0e0;
+  --grey-reduced: #85a3b2;
+  --light-text: #15143966;
+  --paragraph-dark: #6f7787;
+  --light-grey: #ffffffb3;
+  --black: #000000;
+  --play-btn: #e93a7d;
+  --gallery-item: #e2e8f0;
+  --features-bg: #dce8f2;
+  --features-h2: #0f172a;
+  --features-text: #475569;
+  --step-title: #111827;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -18,8 +36,16 @@ header {
   flex-direction: column;
   position: relative;
   height: 1080px;
-  background-image: url("../imgs/header_bacground.png");
+  background-image: url("../imgs/hero_background@1x.jpg");
   background-size: cover;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  header {
+    background-image: url("../imgs/hero_background@2x.jpg");
+  }
 }
 
 .logo_nav {
@@ -45,13 +71,13 @@ header {
 
 .header_list_a {
   text-decoration: none;
-  color: white;
+  color: var(--white);
   font-family: "DM Sans", sans-serif;
 }
 
 .header_svg {
   width: 24px;
-  fill: white;
+  fill: var(--white);
 }
 
 .header_svg_list {
@@ -61,7 +87,8 @@ header {
 
 .travel_h1 {
   font-size: 115px;
-  color: white;
+  color: var(--white);
+  padding-bottom: 21px;
 }
 
 .travel_button {
@@ -69,8 +96,8 @@ header {
   border-radius: 30px;
   width: 191px;
   height: 62px;
-  color: white;
-  background-color: var(--secondary-button-color);
+  color: var(--white);
+  background-color: var(--main-red);
   border: none;
 }
 
@@ -83,22 +110,18 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-
   position: absolute;
   left: 0;
   bottom: 0;
-
   width: 100%;
 }
 
 .about__list {
   width: 72%;
   height: 210px;
-
   display: flex;
   justify-content: space-around;
   align-items: center;
-
   background: rgba(0, 0, 0, 0.45);
 }
 
@@ -108,15 +131,15 @@ header {
 }
 
 .about_number {
-  color: var(--primary-button-color);
+  color: var(--main-red);
 }
 
 .about_h2 {
-  color: white;
+  color: var(--white);
 }
 
 .about_lorem {
-  color: var(--secondary-text-color);
+  color: var(--paragraph-dark);
 }
 
 .about__media {
@@ -132,16 +155,14 @@ header {
   transform: translate(-50%, -50%);
   height: 78px;
   width: 80px;
-  background-color: var(--play-button-color);
+  background-color: var(--white);
   border-radius: 40px;
 }
 
 .about__media-video {
   width: 430px;
   height: 255px;
-
   margin-left: -70px;
-
   position: relative;
   z-index: 10;
 }
@@ -179,13 +200,13 @@ header {
 
   width: 4px;
   height: 85px;
-  background: #dd2242;
+  background: var(--main-red);
 }
 
 .social__number {
   margin-top: 12px;
 
-  color: white;
+  color: var(--white);
   font-size: 18px;
   font-family: "DM Sans", sans-serif;
 
@@ -202,7 +223,7 @@ header {
 }
 
 .social__list a {
-  color: white;
+  color: var(--white);
   text-decoration: none;
   font-family: "DM Sans", sans-serif;
 
@@ -226,7 +247,8 @@ header {
       rgba(2, 12, 33, 0.75) 0%,
       rgba(2, 12, 33, 0.98) 100%
     ),
-    url("../imgs/background_hero_1.png"), url("../imgs/background_hero_2.png");
+    url("../imgs/background_hero1@1x.png"),
+    url("../imgs/background_hero1@2x.png");
 
   background-repeat: no-repeat;
 
@@ -239,10 +261,37 @@ header {
   background-position: top, bottom, top, bottom;
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  .hero {
+    background:
+      linear-gradient(
+        to bottom,
+        rgba(2, 12, 33, 0.75) 0%,
+        rgba(2, 12, 33, 0.98) 100%
+      ),
+      linear-gradient(
+        to top,
+        rgba(2, 12, 33, 0.75) 0%,
+        rgba(2, 12, 33, 0.98) 100%
+      ),
+      url("../imgs/background_hero1@2x.png"),
+      url("../imgs/background_hero2@2x.png");
+
+    background-repeat: no-repeat;
+    background-size:
+      100% 50%,
+      100% 50%,
+      100% 50%,
+      100% 50%;
+    background-position: top, bottom, top, bottom;
+  }
+}
+
 .hero__row {
   width: 1200px;
   margin: 0 auto 180px;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -263,7 +312,7 @@ header {
 }
 
 .hero__content h2 {
-  color: white;
+  color: var(--white);
   font-size: 42px;
   line-height: 52px;
   margin-bottom: 25px;
@@ -271,7 +320,7 @@ header {
 }
 
 .hero__content p {
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--light-grey);
   font-size: 18px;
   line-height: 32px;
   margin-bottom: 35px;
@@ -281,23 +330,19 @@ header {
 .hero__btn {
   width: 180px;
   height: 60px;
-
   border: none;
   border-radius: 35px;
-
-  background: #dd2242;
-  color: white;
-
+  background: var(--main-red);
+  color: var(--white);
   font-size: 18px;
   font-weight: 700;
-
   cursor: pointer;
 }
 
 /* EXPLORE+NUMBERS ELYA */
 .explore__title {
   font-family: "DM Sans", sans-serif;
-  color: rgb(1, 10, 32);
+  color: var(--blue-background);
   text-align: center;
   font-family: "DM Sans";
   font-size: 50px;
@@ -324,7 +369,7 @@ header {
 .numbers {
   background:
     linear-gradient(rgba(2, 12, 33, 0.8), rgba(2, 12, 33, 0.8)),
-    url("../imgs/explore.jpg");
+    url("../imgs/explore@1x.jpg");
 
   background-size: cover;
   background-repeat: no-repeat;
@@ -347,7 +392,7 @@ header {
 .carousel__btn {
   background: transparent;
   border: none;
-  color: #000000;
+  color: var(--black);
   width: 36px;
   height: 36px;
   cursor: pointer;
@@ -413,16 +458,20 @@ header {
 }
 
 .carousel__dot.active {
-  background: #e63946;
-  transform: scale(1.2);
+  width: 26px;
+  height: 10px;
+  border-radius: 20px;
+  background: var(--main-red);
+  transform: none;
 }
+
 /* NUMBERS ELYA */
 .numbers__title {
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
   font-size: 60px;
   text-align: center;
-  color: white;
+  color: var(--white);
   padding-top: 201px;
   padding-bottom: 37px;
 }
@@ -434,14 +483,14 @@ header {
   line-height: 28px;
   letter-spacing: 0.5px;
   text-align: center;
-  color: #e0e0e0;
+  color: var(--text-lighten);
   width: 484px;
   margin: 0 auto;
   padding-bottom: 39px;
 }
 
 .numbers__value {
-  color: #dd2242;
+  color: var(--main-red);
   text-align: center;
   font-family: "DM Sans";
   font-size: 42.137px;
@@ -453,7 +502,7 @@ header {
 }
 
 .numbers__text {
-  color: #e0e0e0;
+  color: var(--text-lighten);
   text-align: center;
   font-feature-settings:
     "liga" off,
@@ -484,14 +533,23 @@ header {
 /* Info Elya */
 .info {
   padding: 501px 256px;
-  background-color: white;
+  background-color: var(--white);
   background-image:
-    url("../imgs/waves_left.png"), url("../imgs/waves_right.png");
+    url("../imgs/waves_left@1x.png"), url("../imgs/waves_right@1x.png");
   background-repeat: no-repeat, no-repeat;
   background-position:
     left top,
     right bottom;
   background-size: 1000px, 1100px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  .info {
+    background-image:
+      url("../imgs/waves_left@2x.png"), url("../imgs/waves_right@2x.png");
+  }
 }
 
 .info__content {
@@ -502,7 +560,7 @@ header {
 }
 
 .info__title {
-  color: #000;
+  color: var(--black);
   text-align: center;
   font-feature-settings:
     "liga" off,
@@ -517,7 +575,7 @@ header {
 }
 
 .info__text {
-  color: #6f7787;
+  color: var(--paragraph-dark);
   text-align: center;
   font-feature-settings:
     "liga" off,
@@ -540,8 +598,8 @@ header {
   gap: 24px;
   border-radius: 122px;
   border: none;
-  background: #dd2242;
-  color: #fff;
+  background: var(--main-red);
+  color: var(--white);
   text-align: center;
   font-family: "DM Sans", sans-serif;
   font-size: 18px;
@@ -554,12 +612,26 @@ header {
 .experience {
   background:
     linear-gradient(rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)),
-    url("../imgs/experience.jpg");
+    url("../imgs/experience@1x.jpg");
 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 1476px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  .experience {
+    background:
+      linear-gradient(rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)),
+      url("../imgs/experience@2x.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
 .experience__video {
@@ -578,7 +650,7 @@ header {
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
-  color: #fff;
+  color: var(--white);
   text-align: center;
   font-family: FontAwesome;
   font-size: 20px;
@@ -588,13 +660,13 @@ header {
   width: 96px;
   height: 96px;
   border-radius: 100px;
-  background: #e93a7d;
+  background: var(--play-btn);
   border: none;
 }
 
 .experience__title {
   font-family: "DM Sans", sans-serif;
-  color: white;
+  color: var(--white);
   font-family: "DM Sans";
   font-size: 42px;
   font-style: normal;
@@ -624,7 +696,7 @@ header {
 }
 .experience__item-title {
   font-family: "DM Sans", sans-serif;
-  color: white;
+  color: var(--white);
   font-family: "DM Sans";
   font-size: 18px;
   font-style: normal;
@@ -636,7 +708,7 @@ header {
 
 .experience__item-text {
   font-family: "DM Sans", sans-serif;
-  color: white;
+  color: var(--white);
   text-align: center;
   font-family: "DM Sans";
   font-size: 18px;
@@ -677,7 +749,7 @@ img {
 }
 
 .gallery {
-  background: #ffffff;
+  background: var(--white);
   border-radius: 0;
   box-shadow: none;
   padding: 60px 40px;
@@ -701,7 +773,7 @@ img {
   font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: #ef3340;
+  color: var(--main-red);
 }
 
 .gallery h1 {
@@ -725,7 +797,7 @@ img {
   border-radius: 28px;
   overflow: hidden;
   min-height: 150px;
-  background: #e2e8f0;
+  background: var(--gallery-item);
 }
 
 .gallery__item--large {
@@ -741,7 +813,7 @@ img {
 .features {
   margin-top: 0;
   padding: 48px 0 80px;
-  background: #dce8f2;
+  background: var(--features-bg);
 }
 
 .features__panel {
@@ -759,13 +831,13 @@ img {
   margin: 0;
   font-size: clamp(2.4rem, 3vw, 3.2rem);
   line-height: 1.05;
-  color: #0f172a;
+  color: var(--features-h2);
 }
 
 .section-header p {
   margin: 18px 0 0;
   max-width: 620px;
-  color: #475569;
+  color: var(--features-text);
   font-size: 1rem;
   line-height: 1.75;
 }
@@ -791,7 +863,7 @@ img {
 .step {
   display: grid;
   grid-template-columns: 48px minmax(0, 1fr);
-  gap: 24px;
+  gap: 44px;
   align-items: start;
   position: relative;
   padding-top: 8px;
@@ -807,8 +879,8 @@ img {
   display: grid;
   place-items: center;
   border-radius: 50%;
-  background: #ef3340;
-  color: white;
+  background: var(--main-red);
+  color: var(--white);
   font-weight: 700;
   font-size: 1rem;
   margin-top: 4px;
@@ -817,19 +889,20 @@ img {
 
 .step__content {
   display: grid;
+  gap: 28px;
 }
 
 .step h3 {
   margin: 0;
-  font-size: 1.05rem;
-  color: #111827;
+  color: var(--step-title);
 }
 
 .step p {
-  margin: 0;
-  color: #000000;
-  line-height: 1.75;
+ font-size: 16px;
+  line-height: 30px;
+  color: var(--paragraph-dark);
 }
+
 
 .travel-card {
   border-radius: 28px;
@@ -845,7 +918,6 @@ img {
   overflow: hidden;
   padding: 18px;
 }
-
 
 .travel-card--inline img {
   width: 100%;
@@ -869,12 +941,12 @@ img {
   margin: 0 0 10px;
   font-size: 1rem;
   font-weight: 700;
-  color: #0f172a;
+  color: var(--features-h2);
 }
 
 .travel-card__body p {
   margin: 0;
-  color: #64748b;
+  color: var(--paragraph-dark);
 }
 
 .button {
@@ -891,14 +963,14 @@ img {
 
 .button--secondary {
   margin-top: 0;
-  background: #ef3340;
-  color: white;
+  background: var(--main-red);
+  color: var(--white);
 }
 
 .site-footer {
   margin-top: 0;
-  background: #070f22;
-  color: #e2e8f0;
+  background: var(--blue-background);
+  color: var(--white);
 }
 
 .footer__inner {
@@ -931,7 +1003,7 @@ img {
 }
 
 .footer__brand-highlight {
-  color: #ef3340;
+  color: var(--main-red);
 }
 
 .footer__nav {
@@ -942,19 +1014,19 @@ img {
 }
 
 .footer__nav a {
-  color: #cbd5e1;
+  color: var(--white);
   text-decoration: none;
   transition: color 0.2s ease;
   font-size: 0.95rem;
 }
 
 .footer__nav a:hover {
-  color: #ffffff;
+  color: var(--white);
 }
 
 .footer__copyright {
   margin: 0;
-  color: #94a3b8;
+  color: var(--white);
   font-size: 0.95rem;
 }
 
@@ -1083,17 +1155,9 @@ img {
     width: calc((100% - 16px) / 3);
   }
 
-  .carousel__dots {
-    padding-bottom: 180px;
-  }
-
-  .numbers {
-    padding: 100px 0;
-  }
-
   .numbers__title {
     font-size: 46px;
-    padding-top: 0;
+    padding-top: 100px;
     padding-bottom: 25px;
   }
 
@@ -1120,12 +1184,12 @@ img {
   .numbers__text {
     font-size: 16px;
     line-height: 26px;
+    padding-bottom: 100px;
   }
 
   .info {
     padding: 220px 40px;
-
-    background-size: 700px, 700px;
+    background-size: 500px, 700px;
   }
 
   .info__title {
@@ -1289,13 +1353,13 @@ img {
   }
 
   .step h3 {
-    font-size: 22px;
     margin-bottom: 8px;
   }
 
   .step p {
     font-size: 16px;
     line-height: 28px;
+    color: var(--paragraph-dark);
   }
 
   .travel-card--inline {
@@ -1435,7 +1499,7 @@ img {
     line-height: 52px;
     font-weight: 700;
     width: 250px;
-    color: #fff;
+    color: var(--white);
   }
 
   .travel_button {
@@ -1600,7 +1664,6 @@ img {
   }
 
   .carousel__dots {
-    padding-bottom: 55px;
     margin-top: 18px;
   }
 
@@ -1609,21 +1672,10 @@ img {
     height: 8px;
   }
 
-  .carousel__dot.active {
-    width: 26px;
-    border-radius: 20px;
-  }
-
-  .numbers {
-    padding-top: 60px;
-    padding-bottom: 70px;
-  }
-
   .numbers__title {
     font-size: 34px;
     line-height: 40px;
-    padding: 0;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
   }
 
   .numbers__subtitle {
@@ -1631,7 +1683,7 @@ img {
     font-size: 15px;
     line-height: 26px;
     padding: 0;
-    margin-bottom: 45px;
+    margin-bottom: 57px;
   }
 
   .numbers__list {
@@ -1654,7 +1706,7 @@ img {
   .numbers__text {
     font-size: 15px;
     line-height: 24px;
-    width: 260px;
+    width: 314px;
     margin: 0 auto;
   }
 
@@ -1766,7 +1818,7 @@ img {
   }
 
   .gallery__text {
-    color: #6f7787;
+    color: var(--paragraph-dark);
     text-align: center;
     font-feature-settings:
       "liga" off,
@@ -1805,10 +1857,9 @@ img {
   .features {
     padding-top: 29px;
     padding-bottom: 32px;
-    background: #dce8f2;
+    background: var(--features-bg);
   }
 
- 
   .section-header h2 {
     font-size: 40px;
     line-height: 46px;
@@ -1824,7 +1875,6 @@ img {
     flex-direction: column;
     align-items: center;
     margin-top: 0;
-
   }
 
   .steps::before {
@@ -1832,8 +1882,8 @@ img {
   }
 
   .features__panel {
-  gap: 45px;
-}
+    gap: 45px;
+  }
 
   .step {
     display: flex;
@@ -1849,7 +1899,6 @@ img {
     height: 56px;
     border-radius: 50%;
     font-size: 24px;
-
   }
 
   .step__content h3 {
@@ -1860,7 +1909,7 @@ img {
   .step__content p {
     font-size: 15px;
     line-height: 24px;
-    color: #777;
+    color: var(--paragraph-dark);
     max-width: 260px;
     margin: 0 auto;
   }
@@ -1871,7 +1920,7 @@ img {
 
   .step__more {
     display: inline-block;
-    color: #dd2242;
+    color: var(--main-red);
     font-size: 16px;
     font-weight: 400;
     text-decoration: none;
@@ -1906,7 +1955,7 @@ img {
     margin: 0 auto;
     font-size: 15px;
     line-height: 24px;
-    color: #777;
+    color: var(--paragraph-dark);
   }
 
   .features__actions {
@@ -1942,13 +1991,13 @@ img {
     overflow: hidden;
     font-size: 14px;
     line-height: 22px;
-    color: #8b8b8b;
+    color: var(--paragraph-dark);
     margin-bottom: 4px;
   }
 
   .travel-card__more {
     display: inline-block;
-    color: #dd2242;
+    color: var(--main-red);
     font-size: 16px;
     font-weight: 400;
     text-decoration: none;
@@ -1971,12 +2020,12 @@ img {
   }
 
   .footer__nav a {
-    color: #fff;
+    color: var(--white);
     font-size: 16px;
   }
 
   .footer__copyright {
-    color: #b0b0b0;
+    color: var(--white);
     font-size: 14px;
     text-align: center;
   }
@@ -1991,6 +2040,6 @@ img {
   .footer__social svg {
     width: 18px;
     height: 18px;
-    fill: white;
+    fill: var(--white);
   }
 }

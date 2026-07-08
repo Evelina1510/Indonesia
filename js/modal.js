@@ -1,41 +1,71 @@
-const track   = document.getElementById('carouselTrack');
-const outer   = document.getElementById('carouselOuter');
-const dotsEl  = document.getElementById('carouselDots');
-const btnPrev = document.getElementById('prev');
-const btnNext = document.getElementById('next');
+const track = document.getElementById("carouselTrack");
+const dotsEl = document.getElementById("carouselDots");
+const btnPrev = document.getElementById("prev");
+const btnNext = document.getElementById("next");
 
-const VISIBLE = 3;
-const GAP     = 16;
-const total   = track.querySelectorAll('.carousel__slide').length;
-const steps   = total - VISIBLE + 1;
+const total = track.querySelectorAll(".carousel__slide").length;
+
+function visibleSlides() {
+  return window.innerWidth <= 480 ? 1 : 3;
+}
+
+function gap() {
+  return window.innerWidth <= 480 ? 0 : 16;
+}
+
+function getSteps() {
+  return total - visibleSlides() + 1;
+}
 
 let current = 0;
 
-for (let i = 0; i < steps; i++) {
-  const dot = document.createElement('button');
-  dot.className = 'carousel__dot' + (i === 0 ? ' active' : '');
-  dot.setAttribute('aria-label', 'Slide ' + (i + 1));
-  dot.addEventListener('click', () => goTo(i));
-  dotsEl.appendChild(dot);
+function slideWidth() {
+  const slide = track.querySelector(".carousel__slide");
+  return slide.getBoundingClientRect().width + gap();
 }
 
-function slideWidth() {
-  const slide = track.querySelector('.carousel__slide');
-  if (!slide) return 0;
-  return slide.getBoundingClientRect().width + GAP;
+function createDots() {
+  dotsEl.innerHTML = "";
+
+  for (let i = 0; i < getSteps(); i++) {
+    const dot = document.createElement("button");
+    dot.className = "carousel__dot";
+    if (i === current) dot.classList.add("active");
+
+    dot.addEventListener("click", () => goTo(i));
+
+    dotsEl.appendChild(dot);
+  }
 }
 
 function goTo(index) {
+  const steps = getSteps();
+
+  if (index < 0) index = steps - 1;
+  if (index >= steps) index = 0;
+
   current = index;
+
   track.style.transform = `translateX(-${current * slideWidth()}px)`;
-  dotsEl.querySelectorAll('.carousel__dot').forEach((d, i) => {
-    d.classList.toggle('active', i === current);
+
+  document.querySelectorAll(".carousel__dot").forEach((dot, i) => {
+    dot.classList.toggle("active", i === current);
   });
 }
 
-btnPrev.addEventListener('click', () => goTo((current - 1 + steps) % steps));
-btnNext.addEventListener('click', () => goTo((current + 1) % steps));
+btnPrev.addEventListener("click", () => goTo(current - 1));
+btnNext.addEventListener("click", () => goTo(current + 1));
 
-window.addEventListener('resize', () => goTo(current));
+window.addEventListener("resize", () => {
+  const steps = getSteps();
 
+  if (current > steps - 1) {
+    current = steps - 1;
+  }
 
+  createDots();
+  goTo(current);
+});
+
+createDots();
+goTo(0);
