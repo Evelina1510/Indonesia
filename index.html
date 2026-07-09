@@ -25,7 +25,6 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <!-- header Vova -->
     <header id="top">
       <div class="container">
         <section class="logo_nav">
@@ -35,51 +34,47 @@
               <img src="./imgs/logo.png" alt="logo" />
             </picture>
           </a>
-
           <nav class="header_nav" id="headerNav">
-  <ul class="header_list">
-    <li class="header_list_item">
-      <a class="header_list_a" href="#">DESTINATIONS</a>
-    </li>
-    <li class="header_list_item">
-      <a class="header_list_a" href="#">EXPERIENCES</a>
-    </li>
-    <li class="header_list_item">
-      <a class="header_list_a" href="#">ABOUT</a>
-    </li>
-    <li class="header_list_item">
-      <a class="header_list_a" href="#">GALLERY</a>
-    </li>
-  </ul>
-</nav>
+            <button class="menu_close" id="closeMenu" type="button">✕</button>
+            <ul class="header_list">
+              <li class="header_list_item">
+                <a class="header_list_a" href="#">DESTINATIONS</a>
+              </li>
+              <li class="header_list_item">
+                <a class="header_list_a" href="#">EXPERIENCES</a>
+              </li>
+              <li class="header_list_item">
+                <a class="header_list_a" href="#">ABOUT</a>
+              </li>
+              <li class="header_list_item">
+                <a class="header_list_a" href="#">GALLERY</a>
+              </li>
+            </ul>
+          </nav>
 
-<ul class="header_svg_list">
-  <li class="header_svg_list_item">
-    <svg class="header_svg">
-      <use href="./imgs/symbol-defs.svg#icon-search"></use>
-    </svg>
-  </li>
+          <ul class="header_svg_list">
+            <li class="header_svg_list_item">
+              <svg class="header_svg">
+                <use href="./imgs/symbol-defs.svg#icon-search"></use>
+              </svg>
+            </li>
 
-  <li class="header_svg_list_item">
-  <button class="header_menu_btn" id="menuBtn" type="button">
-    <svg class="header_svg">
-      <use href="./imgs/symbol-defs.svg#icon-menu"></use>
-    </svg>
-  </button>
-</li>
-</ul>
+            <li class="header_svg_list_item">
+              <button class="header_menu_btn" id="menuBtn" type="button">
+                <svg class="header_svg">
+                  <use href="./imgs/symbol-defs.svg#icon-menu"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
         </section>
-
         <div class="travel_div">
           <h1 class="travel_h1" data-aos="fade-right">
             EXPLORE <br />
             INDONESIA
           </h1>
-
           <button class="travel_button">Start travelling</button>
         </div>
-
-        <!-- ABOUT -->
         <section class="about">
           <ul class="about__list">
             <li class="about__list__item">
@@ -109,7 +104,6 @@
               </p>
             </li>
           </ul>
-
           <div class="about__media-video">
             <picture>
               <source
@@ -147,8 +141,6 @@
         </div>
       </div>
     </header>
-
-    <!-- HERO -->
     <section class="hero">
       <div class="container">
         <div class="hero__row">
@@ -194,7 +186,6 @@
         </div>
       </div>
     </section>
-    <!-- Explore and Numbers Elya -->
     <section class="explore-numbers">
       <img class="explore__bg" src="./imgs/explore@1x.jpg" alt="" />
 
@@ -324,7 +315,6 @@
         </div>
       </div>
     </section>
-    <!-- Info  Elya-->
     <section class="info">
       <div class="container">
         <div class="info__content">
@@ -337,13 +327,11 @@
             mauris tortor, elementum sed.
           </p>
           <div>
-          <button class="info__button" data-aos="zoom-in">Learn More</button>
+            <button class="info__button" data-aos="zoom-in">Learn More</button>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- Video Elya -->
     <section class="experience">
       <div class="container">
         <h2 class="experience__title">
@@ -364,7 +352,7 @@
                 srcset="./imgs/country@1x.jpg 1x, ./imgs/country@2x.jpg 2x"
               />
               <img
-                class="experience__item-img"
+                class="experience__item-img" data-aos="zoom-in-up"
                 src="./imgs/country.jpg"
                 alt="Country"
               />
@@ -382,7 +370,7 @@
             <picture>
               <source srcset="./imgs/city@1x.jpg 1x, ./imgs/city@2x.jpg 2x" />
               <img
-                class="experience__item-img"
+                class="experience__item-img" data-aos="zoom-in-up"
                 src="./imgs/city.jpg"
                 alt="City"
               />
@@ -398,8 +386,6 @@
         </ul>
       </div>
     </section>
-
-    <!-- Photo Galery Ustyna -->
     <section class="gallery">
       <div class="container">
         <div class="gallery__panel">
@@ -465,7 +451,6 @@
         </div>
       </div>
     </section>
-    <!-- Future Ustyna -->
     <section class="features">
       <div class="container">
         <div class="features__panel">
@@ -476,7 +461,7 @@
             <article class="step">
               <div class="step__number">1</div>
               <div class="step__content">
-                <h3>Bookings your flights</h3>
+                <h3 data-aos="fade-up">Bookings your flights</h3>
                 <p class="step__text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Phasellus dapibus mauris in lectus tempus, eget tincidunt
@@ -490,7 +475,7 @@
             <article class="step">
               <div class="step__number">2</div>
               <div class="step__content">
-                <h3>Choosing your hotel</h3>
+                <h3 data-aos="fade-up">Choosing your hotel</h3>
 
                 <p class="step__text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -511,7 +496,7 @@
                 </picture>
 
                 <div class="travel-card__body">
-                  <h3 class="travel-card__label">Travelling there</h3>
+                  <h3 class="travel-card__label" data-aos="fade-up">Travelling there</h3>
 
                   <p class="travel-card__text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -525,7 +510,7 @@
             <article class="step">
               <div class="step__number">3</div>
               <div class="step__content">
-                <h3>Planning your experiences</h3>
+                <h3 data-aos="fade-up">Planning your experiences</h3>
 
                 <p class="step__text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -547,36 +532,40 @@
         </div>
       </div>
     </section>
-    <!-- Footer Ustyna -->
     <footer class="site-footer">
-  <a class="footer__top-btn" href="#top" aria-label="Back to top"></a>
+      <a class="footer__top-btn" href="#top" aria-label="Back to top"></a>
 
-  <div class="container">
-    <div class="footer__inner">
-      <div class="footer__brand-wrap">
-        <picture>
-          <source srcset="./imgs/logo_footer@1x.png 1x, ./imgs/logo_footer@2x.png 2x" />
-          <img src="./imgs/logo_footer.png" alt="logo" />
-        </picture>
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__brand-wrap">
+            <picture>
+              <source
+                srcset="
+                  ./imgs/logo_footer@1x.png 1x,
+                  ./imgs/logo_footer@2x.png 2x
+                "
+              />
+              <img src="./imgs/logo_footer.png" alt="logo" />
+            </picture>
+          </div>
+
+          <nav class="footer__nav">
+            <a href="#">About</a>
+            <a href="#">Pricing</a>
+            <a href="#">Company</a>
+            <a href="#">Blog</a>
+          </nav>
+
+          <div class="footer_socials">
+            <p>f</p>
+            <p>in</p>
+            <p>G</p>
+          </div>
+
+          <p class="footer__copyright">Copyright © 2019</p>
+        </div>
       </div>
-
-      <nav class="footer__nav">
-        <a href="#">About</a>
-        <a href="#">Pricing</a>
-        <a href="#">Company</a>
-        <a href="#">Blog</a>
-      </nav>
-
-      <div class="footer_socials">
-        <p>f</p>
-        <p>in</p>
-        <p>G</p>
-      </div>
-
-      <p class="footer__copyright">Copyright © 2019</p>
-    </div>
-  </div>
-</footer>
+    </footer>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
     <script>

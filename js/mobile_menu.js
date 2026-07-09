@@ -1,8 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const menuBtn = document.querySelector(".header_menu_btn");
-  const headerNav = document.querySelector(".header_nav");
+  const menuBtn = document.getElementById("menuBtn");
+  const closeBtn = document.getElementById("closeMenu");
+  const headerNav = document.getElementById("headerNav");
 
   menuBtn.addEventListener("click", () => {
-    headerNav.classList.toggle("is-open");
+    headerNav.classList.add("is-open");
+  });
+
+  closeBtn.addEventListener("click", () => {
+    headerNav.classList.remove("is-open");
   });
 });
