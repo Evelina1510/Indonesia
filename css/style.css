@@ -2279,6 +2279,10 @@ html {
     transform: rotate(45deg) translate(3px, 3px);
   }
 
+  .footer__top-btn:hover {
+    transform: translateX(-50%);
+    background-color: #e93a57;
+
   
   
 }
